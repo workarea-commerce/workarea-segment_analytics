@@ -7,8 +7,8 @@ require "workarea/segment_analytics/version"
 Gem::Specification.new do |s|
   s.name        = "workarea-segment_analytics"
   s.version     = Workarea::SegmentAnalytics::VERSION
-  s.authors     = ["Jake Beresford"]
-  s.email       = ["jberesford@weblinc.com"]
+  s.authors     = ['Curt Howard']
+  s.email       = ['choward@workarea.com']
   s.homepage    = "https://github.com/workarea-commerce/workarea-segment_analytics"
   s.summary     = "Integration with segment"
   s.description = "The last integration you’ll ever do."
