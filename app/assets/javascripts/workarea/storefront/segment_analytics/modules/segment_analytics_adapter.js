@@ -21,7 +21,7 @@ WORKAREA.analytics.registerAdapter('segmentAnalyticsAdapter', function () {
             var scripts = _.toArray(document.scripts),
 
             loaded = _.some(scripts, function (script) {
-                return script.src.match(/segment_analytics\.com.+analytics.+\.js/i);
+                return script.src.match(/segment\.com.+analytics.+\.js/i);
             });
 
             return loaded;
@@ -73,7 +73,7 @@ WORKAREA.analytics.registerAdapter('segmentAnalyticsAdapter', function () {
                 shipping: order.shipping_total,
                 tax: order.tax_total
             };
-            
+
 
             if ( !_.isEmpty(order.items) ) {  /* [2] */
                 data.products = _.map(order.items, productData);
@@ -92,7 +92,7 @@ WORKAREA.analytics.registerAdapter('segmentAnalyticsAdapter', function () {
             tryPageView({
                 category: payload.name
             });
-            
+
             WORKAREA.segmentAnalytics.track('Product Category Viewed', {
                 filters: payload.filters,
                 name: payload.name,
